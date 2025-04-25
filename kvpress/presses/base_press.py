@@ -92,7 +92,7 @@ class BasePress:
         q_len = hidden_states.shape[1]
 
         # Don't compress after pre-filling
-        if kwargs["cache_position"][-1] > q_len:
+        if kwargs["cache_position"][-1] > q_len + 1:
             return output
 
         if isinstance(cache, QuantizedCache):

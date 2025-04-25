@@ -37,6 +37,7 @@ from kvpress import (
     QFilterPress,
     PyramidKVPress,
     FinchPress,
+    AdapPress,
 )
 
 logger = logging.getLogger(__name__)
@@ -84,6 +85,7 @@ PRESS_DICT = {
     "snap_think": ComposedPress([SnapKVPress(), ThinKPress()]),
     "pyramidkv": PyramidKVPress(),
     "finch": FinchPress(),
+    "adap": AdapPress(),
 }
 
 
@@ -181,7 +183,7 @@ def evaluate(
 
     # Initialize pipeline with the correct attention implementation
     model_kwargs = {"torch_dtype": "auto"}
-    if isinstance(press, ObservedAttentionPress):
+    if isinstance(press, (AdapPress,ObservedAttentionPress)):
         model_kwargs["attn_implementation"] = "eager"
     else:
         try:

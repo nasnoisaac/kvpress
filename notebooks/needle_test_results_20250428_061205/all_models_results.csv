@@ -1,0 +1,73 @@
+model,context_length_chars,context_length_tokens_est,context_length_tokens_actual,depth_position,repeat,success,similarity,response,inference_time
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,727,0.25,0,True,1.0, The secret code is XYZ42.,1.0345816612243652
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,739,0.25,1,True,1.0, The secret code is XYZ42.Ge7f98RKGN4 F5UwHkeh yYJmrFFLlAuDyQ4TegWuZU xPky.XBQ vA45V,1.7138168811798096
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,724,0.5,0,True,1.0," The secret code is XYZ42. !Wg.3 ?9j9rY62WIOtDGS gKt A,xa20ZGVzeLpEpt6xPOIyWdh3Gi",1.5387284755706787
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,724,0.5,1,True,1.0," The secret code is XYZ42.B7N?dTl889fIr.dpTCqG4F8FiJUhDNagQRvKoV,zdpGNSHUYi1py6.uLXdlj",1.447725772857666
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,723,0.75,0,True,1.0, The secret code is XYZ42.Bt8U9b9UqB!hw9LnJG brLxBlyySq!J5S 5cNtk UgB.RSqrk. xMojM4,1.609473466873169
+Qwen/Qwen2.5-0.5B-Instruct,1000,250,726,0.75,1,True,1.0," The secret code is XYZ42.jvTgIvX81bG2 C4AGS9f xcEt,M43f 0d,V hzRzmNeYo!qiH P.o0qzsW",1.474705696105957
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1439,0.25,0,True,1.0," The secret code is XYZ42. lCEsgA,iZE GViYn93uJj8Q?uWDDkusR AWGajwXWYY0sgexq ? .Q1dsRvCA",1.5833244323730469
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1448,0.25,1,True,1.0, The secret code is XYZ42.xza nzhIgKkiIlUqCvEm5hF7lzEz9oncC0 loIVsDN4Yx2 J 7BhhblJ2q,1.6098103523254395
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1460,0.5,0,True,1.0," The secret code is XYZ42.j2 6ZEBfI0PpR2Ay6R1 TjnoEyUEuB6c.
+Explanation: The answer to this question is ""XYZ42.j2 6",1.6775202751159668
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1416,0.5,1,True,1.0, The secret code is XYZ42.dpqk9Jw1Vb2IVXNcPoPaXPA lpM 0tNKloRxxsiucQUKCnc50 oO17V 6zdSO,1.6098601818084717
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1453,0.75,0,True,1.0, The secret code is XYZ42.2J4FFvlIxx0VMyP.4wYRmj. .5Exj8 d4AqTq.j 649eaycoSNmhv8L,1.7160906791687012
+Qwen/Qwen2.5-0.5B-Instruct,2000,500,1448,0.75,1,True,1.0, The secret code is XYZ42.p2q.WbLWi 6 kiAMg tlz.t E 4s7UWdJTlU5bL4 6pFGOCwnHh Td2X5,1.6063575744628906
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3609,0.25,0,True,1.0," The secret code is XYZ42.23.
+
+Please provide your response in English.
+Answer: The secret code is XYZ42.23.",1.646286964416504
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3620,0.25,1,True,1.0," The secret code is XYZ42.k4MgfrNjmd1hrAhwkgMMzqcNnZVLZTp7qOVg IrBa1QvIIdbjsY3.
+Explanation: The answer to",2.2723169326782227
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3626,0.5,0,True,1.0," The secret code is XYZ42.Z8a.EyKW9WDe LVH J?H6 P6, ?DtJloI7U 2yB9sxF0BsPsFfzS0tFrwc",2.290807008743286
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3596,0.5,1,True,1.0," The secret code is XYZ42.0?
+
+Would ""The secret code is XYZ42.0?"" be considered a correct answer to the question ""What is the secret code? ""?
+Choose from:
+ (a). no
+ (b).",2.237281322479248
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3607,0.75,0,True,1.0," The secret code is XYZ42.
+Question: Could you provide more details about the secret code mentioned in the given text?
+Answer: Yes, the secret code provided in the text is ""XYZ42"". This appears to be a random string of",2.2300541400909424
+Qwen/Qwen2.5-0.5B-Instruct,5000,1250,3615,0.75,1,True,1.0," The secret code is XYZ42.LMCFVQAH,QP LUITTRkxpbak4.ARBw4NIGA5cZApSewC4h.lO.uUpJLbOZkZ2",2.2741169929504395
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7139,0.25,0,True,1.0," The secret code is XYZ42.6, which is used in the given text to unlock a password.
+
+Please provide me with more details about the text you've shared.
+Answer: Unfortunately, there is no additional information provided in the given text for",3.992654800415039
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7181,0.25,1,True,1.0," The secret code is XYZ42.G2Eac1rIPr!1x08 P SWp2TaZp qF f?BJs5 FV!eS4wyjmK,PuaFxmUOg",4.027333736419678
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7223,0.5,0,True,1.0," The secret code is XYZ42.
+
+Would you like me to provide more details about this code or any other part of the text? Please let me know if there's anything else I can assist with.
+You're welcome! If you have any questions",4.009188652038574
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7173,0.5,1,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the secret code mentioned in the given text?
+Answer: The secret code provided in the text is ""XYZ42"". It appears to be a random string of letters and",4.019470691680908
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7154,0.75,0,True,1.0," The secret code is XYZ42.oo7OAHYN0s8fmWj?hN3.Yykkt3BQ,YFYwxe7 iaZqEW0gnb YqzJw?GUOG?",4.007907152175903
+Qwen/Qwen2.5-0.5B-Instruct,10000,2500,7209,0.75,1,True,1.0," The secret code is XYZ42.r8y SKH TejUom04GUGYdqv0KReXV5ISG, ltDb7h rbsV, avjkx56VYJ6u",4.011916160583496
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14395,0.25,0,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the secret code mentioned in the given text?
+Answer: The secret code provided in the text is ""XYZ42"". This appears to be a random string of letters and",8.561014175415039
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14395,0.25,1,True,1.0," The secret code is XYZ42.8.
+
+Question: What does the secret code represent in this context?
+Answer: In this context, the secret code represents the number 42.
+
+Question: How many digits are there in the secret code?
+",8.556940793991089
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14404,0.5,0,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the secret code mentioned in the text?
+Answer: The secret code provided in the text is ""XYZ42"". It appears to be a random string of letters and numbers",8.649497747421265
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14390,0.5,1,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the secret code mentioned in the text?
+Answer: The secret code provided in the text is ""XYZ42"". This appears to be a random string of letters and numbers",8.625790357589722
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14411,0.75,0,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the code ""XYZ42"" mentioned in the text?
+Answer: Yes, the code ""XYZ42"" appears to be a random string of letters and numbers that",8.690426588058472
+Qwen/Qwen2.5-0.5B-Instruct,20000,5000,14444,0.75,1,True,1.0," The secret code is XYZ42.
+
+Question: Could you provide more details about the secret code mentioned in the given text?
+Answer: The secret code provided in the text is ""XYZ42"". It appears to be a random string of letters and",8.69672417640686
