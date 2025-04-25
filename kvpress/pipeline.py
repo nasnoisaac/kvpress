@@ -11,10 +11,12 @@ from transformers import AutoModelForCausalLM, Cache, DynamicCache, Pipeline
 from transformers.pipelines import PIPELINE_REGISTRY
 from transformers.pipelines.base import GenericTensor
 
+from kvpress.presses.adap_press import AdapPress
 from kvpress.presses.base_press import BasePress
 from kvpress.presses.key_rerotation_press import KeyRerotationPress
 from kvpress.presses.observed_attention_press import ObservedAttentionPress
 from kvpress.presses.per_layer_compression_press import PerLayerCompressionPress
+from kvpress.presses.adap_press import AdapPress
 
 logger = logging.getLogger(__name__)
 
@@ -191,6 +193,8 @@ class KVPressTextGenerationPipeline(Pipeline):
 
     def output_attentions(self, press: BasePress):
         if isinstance(press, ObservedAttentionPress):
+            return True
+        if isinstance(press, AdapPress):
             return True
         if isinstance(press, (KeyRerotationPress, PerLayerCompressionPress)) and isinstance(
             press.press, ObservedAttentionPress

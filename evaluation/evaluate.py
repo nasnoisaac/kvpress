@@ -35,6 +35,7 @@ from kvpress import (
     ThinKPress,
     TOVAPress,
     QFilterPress,
+    AdapPress,
 )
 
 logger = logging.getLogger(__name__)
@@ -80,6 +81,7 @@ PRESS_DICT = {
     "chunkkv": ChunkKVPress(press=SnapKVPress(), chunk_length=20),
     "qfilter": QFilterPress(),
     "snap_think": ComposedPress([SnapKVPress(), ThinKPress()]),
+    "adap": AdapPress(),
 }
 
 
@@ -182,7 +184,7 @@ def evaluate(
 
     # Initialize pipeline with the correct attention implementation
     model_kwargs = {"torch_dtype": "auto"}
-    if isinstance(press, ObservedAttentionPress):
+    if isinstance(press, (AdapPress,ObservedAttentionPress)):
         model_kwargs["attn_implementation"] = "eager"
     else:
         try:
