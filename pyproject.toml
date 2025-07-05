@@ -31,6 +31,7 @@ dependencies = [
     "accelerate>=1.0.0,<2",
     "requests>=2.32.3,<3",
     "cachetools>=5.5.2,<6",
+    "seaborn>=0.13.2",
 ]
 
 [dependency-groups]

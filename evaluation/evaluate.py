@@ -183,7 +183,7 @@ def evaluate(
 
     # Initialize pipeline with the correct attention implementation
     model_kwargs = {"torch_dtype": "auto"}
-    if isinstance(press, (AdapPress,ObservedAttentionPress)):
+    if isinstance(press, (ObservedAttentionPress)):
         model_kwargs["attn_implementation"] = "eager"
     else:
         try:
